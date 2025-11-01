@@ -1,16 +1,95 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <title>Pinterest Clone Hero Section</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      min-height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+    .hero {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      min-height: 450px;
+    }
+    .hero-image {
+      flex: 2.5;
+      min-width: 0;
+    }
+    .hero-image img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-content {
+      flex: 1.5;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 40px;
+    }
+    .hero-content h1 {
+      font-size: 2.6rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+      line-height: 1.18;
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 26px;
+      color: #444;
+    }
+    .hero-content a {
+      padding: 10px 30px;
+      background: #e74d3c;
+      color: #fff;
+      border-radius: 6px;
+      font-family: inherit;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.15s;
+      margin-top: 10px;
+      box-shadow: none;
+      outline: none;
+      border: none;
+    }
+    .hero-content a:hover {
+      background: #b0301c;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        height: auto;
+      }
+      .hero-image img {
+        height: 380px;
+      }
+      .hero-content {
+        padding: 40px 10px 20px 10px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="hero">
+    <div class="hero-image">
+      <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" alt="Mountain Lake"/>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to my<br>Pinterest clone</h1>
+      <p>Discover new inspiration and save your favorite ideas</p>
+      <a href="#">Explore now</a>
+    </div>
+  </div>
 </body>
-
 </html>
